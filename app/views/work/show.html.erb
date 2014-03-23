@@ -1,4 +1,11 @@
 <h1>Work/show</h1>
-<p>Available edtions of
-
-</p>
+<tbody>
+  <% @works.each do |work| %>
+    <tr>
+      <td>
+        <%= work.title %>
+      </td>
+      <br></br>
+    </tr>
+  <% end %>
+</tbody>

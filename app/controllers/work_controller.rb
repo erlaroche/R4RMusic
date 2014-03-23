@@ -1,5 +1,5 @@
 class WorkController < ApplicationController
   def show
-    @work = Work.all
+    @works = Work.all
   end
 end
