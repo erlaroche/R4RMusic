@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20140322232746) do
   end
 
   create_table "works", force: true do |t|
-    t.string   "name"
+    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "composer_id"
