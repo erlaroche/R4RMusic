@@ -1,5 +1,5 @@
 class WorkController < ApplicationController
   def show
-    @work = Work.find(params[:composer_id])
+    @work = Work.all
   end
 end
