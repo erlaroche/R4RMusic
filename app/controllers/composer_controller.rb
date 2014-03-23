@@ -1,5 +1,5 @@
 class ComposerController < ApplicationController
   def show
-    @composer = Composer.find_by_id(params[:id])
+    @composer = Composer.first.name
   end
 end
