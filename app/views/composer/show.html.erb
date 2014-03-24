@@ -1,5 +1,20 @@
 <h1>Composer/show</h1>
-<h3> Works by <%= "#{@composer}" %></h3>
-
-
-
+<% @composers.each do |composer| %></h3>
+  <h3> Works by <%= "#{composer.name}" %></h3>
+<% end %>
+ 
+<table>
+  <tr>
+    <th>Composer</th>
+    <th>Title</th>
+  </tr>
+ 
+  <% @composers.each do |composer| %>
+    <tr>
+      <td><li><%= "#{composer.name}" %></li></td>
+      <td><% @works.each do |work| %>
+        <li><%= "#{work.title}" %></li></td>
+        <% end %>
+      </tr>
+  <% end %>
+</table>
